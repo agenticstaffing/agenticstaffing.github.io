@@ -1,0 +1,332 @@
+:root {
+    --primary-color: #0f172a;
+    --secondary-color: #3b82f6;
+    --accent-color: #2563eb;
+    --background-color: #f8fafc;
+    --text-color: #334155;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin: 0 0 20px 0;
+    background: linear-gradient(to right, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #94a3b8;
+    margin: 0 0 40px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    color: var(--primary-color);
+    letter-spacing: -0.025em;
+}
+
+.cards {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    padding: 40px;
+    flex: 1 1 350px;
+    max-width: 500px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: var(--secondary-color);
+}
+
+.icon-wrapper {
+    color: var(--secondary-color);
+    margin-bottom: 24px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card .highlight {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin: 16px 0 8px;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.card .supervisor {
+    color: #64748b;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 24px;
+}
+
+.card p {
+    color: #64748b;
+    margin: 0;
+}
+
+#philosophy {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.philosophy-content {
+    font-size: 1.25rem;
+    color: #475569;
+}
+
+#philosophy strong {
+    color: var(--primary-color);
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    background: white;
+    color: #94a3b8;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
+
+/* How It Works */
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.step {
+    flex: 1 1 300px;
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+}
+
+.step h3 {
+    margin: 0 0 12px 0;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+/* Pricing */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 32px;
+    flex: 1 1 280px;
+    max-width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--secondary-color);
+    background: #eff6ff;
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.08);
+}
+
+.pricing-card h3 {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.pricing-card .price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #64748b;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 48px;
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Comparison */
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    background: #f8fafc;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+.comparison-table .highlight-col {
+    background: #eff6ff;
+    color: var(--primary-color);
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.disclaimer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #94a3b8;
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .pricing-card.featured {
+        transform: none;
+    }
+    .pricing-card.featured:hover {
+        transform: translateY(-5px);
+    }
+}
